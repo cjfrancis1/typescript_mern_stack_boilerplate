@@ -10,7 +10,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     publicPath: "/",
-    filename: "js/[name].bundle.js"
+    filename: "js/[name].bundle.js",
+    globalObject: "this"
   },
   devtool: "source-map",
   resolve: {
